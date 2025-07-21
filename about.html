@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | HealthIsWealth</title>
+  <link rel="stylesheet" href="style.css" />
+  <script>
+    function toggleMenu() {
+      document.getElementById('nav-links').classList.toggle('show');
+    }
+  </script>
+</head>
+<body class="page-bg">
+  <nav>
+    <img src="images/HealthIsWealth.jpg" alt="Logo" class="logo" />
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+    <ul id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html" class="active">About Hospital</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <header class="hero">
+    <div>
+      <h1>About Our Hospital</h1>
+      <p>HealthIsWealth is a multi-specialty hospital established in 2010, providing high-quality medical care with modern technology and compassionate service.</p>
+    </div>
+    <img src="images/hospital-building.jpg" alt="Hospital Building" />
+  </header>
+  <section class="section">
+    <h2>Who We Are</h2>
+    <p>We are a team of over 200 medical professionals across departments, bringing the best clinical practices together with the most compassionate care.</p>
+    <p>Our facility includes modern operating theaters, diagnostics, emergency units, ICUs, maternity, pediatric care, and rehabilitation centers under one roof.</p>
+    <p>We actively engage in community outreach, health awareness programs, and continuous training to ensure up-to-date care delivery.</p>
+  </section>
+  <footer>
+    <p>&copy; 2025 HealthIsWealth Hospital. All rights reserved.</p>
+  </footer>
+</body>
+</html>

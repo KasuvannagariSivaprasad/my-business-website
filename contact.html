@@ -1,30 +1,44 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact | HealthIsWealth</title>
   <link rel="stylesheet" href="style.css" />
+  <script>
+    function toggleMenu() {
+      document.getElementById('nav-links').classList.toggle('show');
+    }
+  </script>
 </head>
-<body>
+<body class="page-bg">
   <nav>
-    <ul>
+    <img src="images/HealthIsWealth.jpg" alt="Logo" class="logo" />
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+    <ul id="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About Hospital</a></li>
       <li><a href="services.html">Services</a></li>
       <li><a href="contact.html" class="active">Contact</a></li>
     </ul>
   </nav>
-
-  <section class="section contact">
-    <h2>Contact Us</h2>
-    <p><strong>Address:</strong> 123 Wellness Street, Health City</p>
-    <p><strong>Phone:</strong> +91-9876543210</p>
-    <p><strong>Email:</strong> contact@healthiswealth.com</p>
-    <img src="images/contact.jpg" alt="Contact">
+  <header class="hero">
+    <div>
+      <h1>Contact Us</h1>
+      <p>Reach out for appointments, emergencies, or inquiries. We are here to help you 24/7.</p>
+    </div>
+    <img src="images/contact.jpg" alt="Contact" />
+  </header>
+  <section class="section">
+    <h2>Visit or Contact Us</h2>
+    <p><strong>Address:</strong> Banglore, Marathalli, IN 500001</p>
+    <p><strong>Phone:</strong> +91 9347179322</p>
+    <p><strong>Email:</strong> sivaprasad.522000@gmail.com</p>
+    <p><strong>Timings:</strong> Mon–Sat: 8:00 AM to 8:00 PM | Emergency: 24/7</p>
+    <p><strong>Support:</strong> Our staff is ready to assist with appointment bookings, test reports, and consultations.</p>
+    <a href="mailto:sivaprasad.522000@gmail.com" class="btn">Email Us</a>
   </section>
-
   <footer>
-    <p>&copy; 2025 HealthIsWealth Hospital</p>
+    <p>&copy; 2025 HealthIsWealth Hospital. All rights reserved.</p>
   </footer>
 </body>
 </html>

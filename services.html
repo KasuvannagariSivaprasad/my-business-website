@@ -1,40 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Services | HealthIsWealth</title>
   <link rel="stylesheet" href="style.css" />
+  <script>
+    function toggleMenu() {
+      document.getElementById('nav-links').classList.toggle('show');
+    }
+  </script>
 </head>
-<body>
+<body class="page-bg">
   <nav>
-    <ul>
+    <img src="images/HealthIsWealth.jpg" alt="Logo" class="logo" />
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+    <ul id="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About Hospital</a></li>
       <li><a href="services.html" class="active">Services</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
   </nav>
-
-  <section class="section">
-    <h2>Our Services</h2>
-    <div class="service-items">
-      <div class="service">
-        <h3>Cardiology</h3>
-        <p>Advanced heart care with experienced specialists.</p>
-      </div>
-      <div class="service">
-        <h3>Neurology</h3>
-        <p>Comprehensive brain and spine care solutions.</p>
-      </div>
-      <div class="service">
-        <h3>Emergency & Trauma</h3>
-        <p>24/7 emergency services with fully equipped units.</p>
-      </div>
+  <header class="hero">
+    <div>
+      <h1>Our Services</h1>
+      <p>We provide a wide range of medical services for all ages and needs with excellence and expertise.</p>
+    </div>
+    <img src="images/service1.jpg" alt="Service" />
+  </header>
+  <section class="section service-items">
+    <div class="service">
+      <h3>Cardiology</h3>
+      <p>Heart care including diagnostic, surgical, and rehab support from expert cardiologists and staff.</p>
+    </div>
+    <div class="service">
+      <h3>Neurology</h3>
+      <p>Treatment of brain and nervous system conditions including stroke, epilepsy, and neurodegenerative disorders.</p>
+    </div>
+    <div class="service">
+      <h3>Orthopedics</h3>
+      <p>Bone, joint, and spinal care, including minimally invasive procedures and physical rehabilitation.</p>
+    </div>
+    <div class="service">
+      <h3>Emergency Medicine</h3>
+      <p>24/7 emergency care with a fully equipped trauma center and rapid response team.</p>
     </div>
   </section>
-
   <footer>
-    <p>&copy; 2025 HealthIsWealth Hospital</p>
+    <p>&copy; 2025 HealthIsWealth Hospital. All rights reserved.</p>
   </footer>
 </body>
 </html>

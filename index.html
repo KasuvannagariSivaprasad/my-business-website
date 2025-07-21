@@ -1,28 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Home | HealthIsWealth</title>
   <link rel="stylesheet" href="style.css" />
+  <script>
+    function toggleMenu() {
+      document.getElementById('nav-links').classList.toggle('show');
+    }
+  </script>
 </head>
-<body>
+<body class="page-bg">
   <nav>
-    <ul>
+    <img src="images/HealthIsWealth.jpg" alt="Logo" class="logo" />
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+    <ul id="nav-links">
       <li><a href="index.html" class="active">Home</a></li>
       <li><a href="about.html">About Hospital</a></li>
       <li><a href="services.html">Services</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
   </nav>
-
   <header class="hero">
-    <h1>Welcome to HealthIsWealth</h1>
-    <p>Your health is our top priority. Get quality care at every step.</p>
-    <img src="images/doctor.jpg" alt="Doctor">
+    <div>
+      <h1>Welcome to HealthIsWealth</h1>
+      <p>Leading the way in patient care and medical excellence. We serve with compassion, innovation, and trust.</p>
+      <a href="services.html" class="btn">Explore Services</a>
+    </div>
+    <img src="images/doctor.jpg" alt="Doctor" />
   </header>
-
+  <section class="section">
+    <h2>Our Mission</h2>
+    <p>At HealthIsWealth, our mission is to promote, preserve, and restore the health of all individuals by providing accessible, high-quality healthcare. We are dedicated to advancing medical knowledge, education, and compassionate care to improve health outcomes.</p>
+    <p>With a patient-first approach, we aim to create a healing environment that respects the dignity, values, and needs of our patients and their families.</p>
+  </section>
   <footer>
-    <p>&copy; 2025 HealthIsWealth Hospital</p>
+    <p>&copy; 2025 HealthIsWealth Hospital. All rights reserved.</p>
   </footer>
 </body>
 </html>
